@@ -78,6 +78,8 @@ public class Inicio extends javax.swing.JFrame {
         }
         try {
             jTextArea_Codigo3Dgenerado.setText("");
+            String op="";
+            if(op.equalsIgnoreCase("")==false){}
             System.out.println("Inicia la generación de C3D...");
             scanner scan = new scanner(new BufferedReader( new StringReader(texto)));
             parser parser = new parser(scan);

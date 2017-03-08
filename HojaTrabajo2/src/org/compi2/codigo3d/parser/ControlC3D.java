@@ -8,13 +8,14 @@ public class ControlC3D {
     
     private static int temp = 0;
     private static String c3d = "";
-    
+    private static int etq=0;
     /**
      * Reinicia las variables estáticas relacionadas con la generación del
      * código de tres direcciones.
      */
     public static void reiniciar(){
         temp = 0;
+        etq=0;
         c3d = "";
     }
     
@@ -24,6 +25,10 @@ public class ControlC3D {
      */
     public static String generaTemp(){
         return "t$"+temp++;
+    }
+    
+    public static String generaEtq(){
+        return "L"+etq++;
     }
     
     /**
@@ -42,5 +47,21 @@ public class ControlC3D {
     public static String getC3D(){
         return c3d;
     }
+
+	public static int getTemp() {
+		return temp;
+	}
+
+	public static void setTemp(int temp) {
+		ControlC3D.temp = temp;
+	}
+
+	public static int getEtq() {
+		return etq;
+	}
+
+	public static void setEtq(int etq) {
+		ControlC3D.etq = etq;
+	}
     
 }
