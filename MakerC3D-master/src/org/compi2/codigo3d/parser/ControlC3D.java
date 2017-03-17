@@ -8,13 +8,14 @@ public class ControlC3D {
     
     private static int temp = 0;
     private static String c3d = "";
-    
+    private static int etq=0;
     /**
-     * Reinicia las variables est谩ticas relacionadas con la generaci贸n del
-     * c贸digo de tres direcciones.
+     * Reinicia las variables est醫icas relacionadas con la generaci髇 del
+     * c骴igo de tres direcciones.
      */
     public static void reiniciar(){
         temp = 0;
+        etq=0;
         c3d = "";
     }
     
@@ -26,21 +27,41 @@ public class ControlC3D {
         return "t$"+temp++;
     }
     
+    public static String generaEtq(){
+        return "L"+etq++;
+    }
+    
     /**
-     * Agrega la sentencia que recibe como par谩metro a la cadena de c贸digo
+     * Agrega la sentencia que recibe como par醡etro a la cadena de c骴igo
      * de tres direcciones que se va generando hasta ese momento.
-     * @param sentencia C贸digo 3D a agregar
+     * @param sentencia C骴igo 3D a agregar
      */
     public static void agregarC3D(String sentencia){
         c3d += sentencia;
     }
     
     /**
-     * Devuelve el c贸digo 3D generao hasta el momento de su invocaci贸n.
-     * @return C贸digo 3D generado
+     * Devuelve el c骴igo 3D generao hasta el momento de su invocaci髇.
+     * @return C骴igo 3D generado
      */
     public static String getC3D(){
         return c3d;
     }
+
+	public static int getTemp() {
+		return temp;
+	}
+
+	public static void setTemp(int temp) {
+		ControlC3D.temp = temp;
+	}
+
+	public static int getEtq() {
+		return etq;
+	}
+
+	public static void setEtq(int etq) {
+		ControlC3D.etq = etq;
+	}
     
 }

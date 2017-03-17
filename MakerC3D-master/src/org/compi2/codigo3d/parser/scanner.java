@@ -236,7 +236,7 @@ public class scanner implements java_cup.runtime.Scanner {
   private int zzFinalHighSurrogate = 0;
 
   /* user code: */
-    //Código de usuario
+    //Codigo de usuario
     
 
 
@@ -627,7 +627,7 @@ public class scanner implements java_cup.runtime.Scanner {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1: 
-            { String errLex = "Error léxico, caracter irreconocible: '"+yytext()+"' en la línea: "+(yyline+1)+" y columna: "+yycolumn;
+            { String errLex = "Error lexico, caracter irreconocible: '"+yytext()+"' en la l�nea: "+(yyline+1)+" y columna: "+yycolumn;
         System.err.println(errLex);
             }
           case 23: break;
